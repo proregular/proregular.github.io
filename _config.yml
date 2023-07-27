@@ -98,9 +98,9 @@ comments:
     category_id: DIC_kwDOJ99-m84CYKWH
     mapping: pathname # optional, default to 'pathname'
     input_position: bottom # optional, default to 'bottom'
-    lang: ko-KR # optional, default to the value of `site.lang`
+    lang: ko # optional, default to the value of `site.lang`
     reactions_enabled: 1 # optional, default to the value of `1`
-    theme: preferred_color_scheme
+    theme: noborder_dark
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
