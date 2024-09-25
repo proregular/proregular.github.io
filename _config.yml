@@ -18,26 +18,26 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 개발일지 # the main title
+title: MNJ Blog # the main title
 
-tagline: 개발 일지를 작성하는 블로그 # it will display as the sub-title
+tagline: 머니주 블로그 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://proregular.github.io"
 
 github:
   username: proregular # change to your github username
 
-twitter:
-  username:  # change to your twitter username
+#twitter:
+#username: # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: 주머니
+  name: 머니주
   email: jumoney1012@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -53,7 +53,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-L7DQHQJSML
 
 # Prefer color scheme setting.
 #
