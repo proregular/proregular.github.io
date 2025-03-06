@@ -53,7 +53,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages
+          name: github-pages  # 아티팩트 이름 설정
           path: "_site"  # _site 폴더를 업로드
 
   deploy:
@@ -64,13 +64,12 @@ jobs:
     needs: build
     steps:
       - name: Download site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
-          name: github-pages
+          name: github-pages  # Upload에서 사용한 artifact 이름을 그대로 사용
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact_name: github-pages
-          folder: _site  # _site 폴더를 GitHub Pages로 배포
+          artifact_name: github-pages  # 아티팩트 이름
