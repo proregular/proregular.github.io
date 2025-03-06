@@ -42,7 +42,7 @@ jobs:
       - name: Build site
         run: |
           bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }}"
-          ls -al "_site${{ steps.pages.outputs.base_path }}" # 빌드된 파일이 제대로 있는지 확인
+          ls -al "_site${{ steps.pages.outputs.base_path }}"  # 빌드 후 생성된 파일 경로 확인
         env:
           JEKYLL_ENV: "production"
 
@@ -67,7 +67,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v2
         with:
           name: github-pages   # 업로드된 아티팩트 이름과 일치
 
